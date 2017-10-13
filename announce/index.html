@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0" />
+  <link rel="stylesheet" href="css/libs/swiper.min.css">
+  <link rel="stylesheet" href="css/libs/animate.min.css" />
+  <link rel="stylesheet" href="css/index.min.4a17e795.css">
+  <title>告别大瓶，进入洗衣“泵”时代</title>
+</head>
+<body>
+  <div class="link"><img src="img/link.jpg" /></div>
+  <div id="maskFont"></div>
+  <div class="swiper-container">
+    <audio id="audio" src="" loop="loop" autoplay="autoplay"></audio>
+    <div class="swiper-slide0" id="loader">
+      <div class="spinner"></div>
+    </div>
+    <img src="img/music-open.png" class="music-btn pause" id="music-btn" />
+
+    <div class="swiper-wrapper">
+      <!--slide1-->
+      <section class="swiper-slide swiper-slide1">
+        <div class="swiper_cover"></div>
+        <img class="leftIn custom_leftIn" src="img/slide1-left.png" />
+        <img class="rightIn custom_rightIn" src="img/slide1-right.png" />
+
+        <div class="bubbles-box ani" data-slide-in="at 2000 from fadeIn use linear during 1500"><!-- 泡泡 -->
+          <div class="bubble ani" data-slide-in="at 0 from bubbles use linear during 5000"></div>
+          <div class="bubble ani" data-slide-in="at 1400 from bubbles use linear during 5000"></div>
+          <div class="bubble ani" data-slide-in="at 2800 from bubbles use linear during 5000"></div>
+          <div class="bubble ani" data-slide-in="at 4000 from bubbles use linear during 5000"></div>
+        </div>
+        <img class="bottle" src="img/slide1-bottle.png" />
+        <div class="button-front"></div>
+        <img class="button" src="img/slide1-save.png" />
+      </section>
+      <!--slide2-->
+      <section class="swiper-slide swiper-slide2 stop-swiping">
+        <div class="swiper_cover"></div>
+        <img class="leftIn" src="img/slide2-left.png" />
+        <img class="rightIn" src="img/slide2-right.png" />
+
+        <div class="content">
+          <img class="txt" id="slide2Txt" src="img/slide2-txt.png"/><!--提示文字-->
+          <img class="bottle ani" id="slide2Bottle1" src="img/slide2-bottle.png"
+            data-slide-in="at 1000 from fadeIn use linear during 1500" /><!--瓶子-->
+          <img class="bottle3" id="slide2Bottle" src="img/slide3-bottle.png" />
+          <img class="bottle-shadow" id="botShadow" src="img/slide3-shadow.png" /><!--瓶子的影子（拉起和倒）-->
+          <!-- 盖子(注入) begin -->
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" style="display: none">
+            <symbol id="wave">
+              <path
+                d="M420,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C514,6.5,518,4.7,528.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H420z"></path>
+              <path
+                d="M420,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C326,6.5,322,4.7,311.5,2.7C304.3,1.4,293.6-0.1,280,0c0,0,0,0,0,0v20H420z"></path>
+              <path
+                d="M140,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C234,6.5,238,4.7,248.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H140z"></path>
+              <path
+                d="M140,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C46,6.5,42,4.7,31.5,2.7C24.3,1.4,13.6-0.1,0,0c0,0,0,0,0,0l0,20H140z"></path>
+            </symbol>
+          </svg>
+          <div class="lid-box ani" data-slide-in="at 1000 from fadeIn use linear during 1500">
+            <img class="slide4-water" id="slide4Water" src="img/slide4-water.png" /><!--水流-->
+            <img src="img/slide2-eaves.png" class="eaves" />
+            <img src="img/slide2-mouth.png" class="mouth" />
+            <img class="slide4-over" id="slide4overflow" src="img/slide4-overflow.png" />
+
+            <div class="water-box">
+              <div class="water" id="water">
+                <svg class="water-wave water-wave-back" viewBox="0 0 560 20">
+                  <use xlink:href="#wave"></use>
+                </svg>
+                <svg class="water-wave water-wave-front" viewBox="0 0 560 20">
+                  <use xlink:href="#wave"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <!-- 盖子 end -->
+
+        </div>
+        <img class="btn-txt" src="img/slide3-txt.png" /><!--倒出提示-->
+        <div class="button-front" id="oper-btn"></div>
+        <img class="button" src="img/slide2-btn.png" id="btn-img" />
+        <img class="arrow" src="img/arrow.png" />
+        <img class="new-product" src="img/slide4-new.png" />
+      </section>
+      <!--slide8-->
+      <section class="swiper-slide swiper-slide8">
+        <div class="swiper_cover"></div>
+        <img class="leftIn" src="img/slide8-left.png" />
+        <img class="rightIn" src="img/slide8-right.png" />
+
+        <div class="content">
+          <img class="save" src="img/slide8-save.png"  />
+          <img class="bottle" src="img/slide8-bottle.png" />
+          <img class="bottle-light" src="img/slide8-bottle-light.png" />
+        </div>
+        <img class="arrow" src="img/arrow.png" />
+      </section>
+      <!--slide9-->
+      <section class="swiper-slide swiper-slide9">
+        <div class="swiper_cover"></div>
+        <img class="leftIn" src="img/slide9-left.png" />
+        <img class="rightIn" src="img/slide9-right.png" />
+
+        <div class="content">
+          <img class="box" src="img/slide9-box.png"
+            />
+          <img class="box-front" src="img/slide9-box-front.png"
+            />
+          <img class="use use1" src="img/slide9-use1.png" />
+          <img class="use use2" src="img/slide9-use2.png" />
+          <img class="enter enter1" src="img/slide9-enter1.png" />
+          <img class="enter enter2" src="img/slide9-enter2.png" />
+          <img class="water" src="img/slide9-water.png" />
+          <img class="pour" src="img/slide9-pour.png" />
+          <img class="curve" src="img/slide9-curve.png" />
+          <img class="weight w8" src="img/slide9-w8.png" />
+          <img class="weight w16" src="img/slide9-w16.png" />
+          <img class="weight w24" src="img/slide9-w24.png" />
+
+          <div class="bottle">
+            <img class="mouth" src="img/slide9-mouth.png" />
+            <img class="body" src="img/slide9-bottole.png" />
+          </div>
+        </div>
+        <div class="button-front" id="button_cover"></div>
+        <img class="button ani" src="img/slide9-press.png"
+          data-slide-in="at 1000 from fadeIn use linear during 1500" />
+        <img class="arrow" src="img/arrow.png" />
+      </section>
+      <!--slide10-->
+      <section class="swiper-slide swiper-slide10">
+        <div class="swiper_cover"></div>
+        <img class="leftIn" src="img/slide10-left.png" />
+        <img class="rightIn" src="img/slide10-right.png" />
+
+        <div class="content">
+          <img class="bottle" src="img/slide8-bottle.png" />
+          <img class="basket" src="img/slide10-basket.png" />
+          <img class="clothes" src="img/slide10-clothes.png" />
+          <img class="b1" src="img/slide10-b1.png" />
+          <img class="wave wave1" src="img/slide10-wave.png" />
+          <img class="ani b2" src="img/slide10-b2.png" />
+          <img class="ani b3" src="img/slide10-b3.png" />
+          <img class="ani b4" src="img/slide10-b4.png" />
+          <img class="ani b5" src="img/slide10-b5.png" />
+          <img class="ani wave wave2" src="img/slide10-wave.png" />
+        </div>
+        <img class="arrow" src="img/arrow.png" />
+      </section>
+      <!--slide11-->
+      <section class="swiper-slide swiper-slide11">
+        <div class="swiper_cover"></div>
+        <img class="leftIn" src="img/slide11-left.png" />
+        <img class="rightIn" src="img/slide11-right.png" />
+
+        <div class="content">
+          <img class="tube-head tube-head-left" src="img/slide11-tube-head.png" />
+          <img class="tube-head tube-head-right" src="img/slide11-tube-head.png" />
+          <div class="tube-left-div">
+            <img class="tube tube-left ani" src="img/slide11-tube.png" />
+            <img class="liquid-left" src="img/slide11-liquid-left.png" />
+          </div>
+          <div class="tube-right-div">
+            <img class="tube tube-right" src="img/slide11-tube.png" />
+            <img class="liquid-right" src="img/slide11-liquid-right.png" />
+          </div>
+          <img class="standard" src="img/slide11-standard.png" />
+          <img class="zhizun" src="img/slide11-zhizun.png" />
+          <img class="curve-left" src="img/slide9-curve.png" />
+          <img class="curve-right" src="img/slide11-curve-right.png" />
+          <img class="left-per per0" src="img/slide11-left-percent0.png" />
+          <img class="left-per perm" src="img/slide11-left-percentm.png" />
+          <img class="left-per per15" src="img/slide11-left-percent15.png" />
+          <img class="right-per per0" src="img/slide11-right-percent0.png" />
+          <img class="right-per perm" src="img/slide11-right-percentm.png" />
+          <img class="right-per per15" src="img/slide11-right-percent47.png" />
+          <img class="volume" src="img/slide11-bottom-volume.png" />
+          <img class="common" src="img/slide11-bottom-common.png" />
+        </div>
+        <img class="arrow" src="img/arrow.png" />
+      </section>
+      <!--slide12-->
+      <section class="swiper-slide swiper-slide12">
+        <div class="swiper_cover"></div>
+        <img class="leftIn" src="img/slide12-left.png" />
+        <img class="rightIn" src="img/slide12-right.png" />
+
+        <div class="content">
+          <img class="bottle-big" src="img/slide12-bottle-big.png" />
+          <img class="bottle" src="img/slide12-bottle.png" />
+          <div class="circle">
+            <img class="accurate" src="img/slide12-accurate.png" />
+            <img class="dosage" src="img/slide12-dosage.png" />
+            <img class="lighter" src="img/slide12-lighter.png" />
+            <img class="press" src="img/slide12-press.png" />
+          </div>
+        </div>
+        <div class="farewell-front"></div>
+        <img class=" farewell" src="img/slide12-farewell.png"
+           />
+<!-- data-slide-in="at 4000 from bounceInLeft use linear during 1000" -->
+        <div class="welcome-front"></div>
+        <img class="welcome" src="img/slide12-welcome.png"
+         />
+         <!--  data-slide-in="at 4000 from bounceInRight use linear during 1000"  -->
+      </section>
+      <!--slide13-->
+      <section class="swiper-slide swiper-slide13">
+        <div class="swiper_cover"></div>
+        <img class="leftIn" src="img/slide13-left.png"
+          />
+        <img class="rightIn" src="img/slide13-right.png"
+          />
+        <img class="rightIn zhizun" src="img/slide13-zhizun.png"
+          />
+
+        <div class="content">
+          <div class="ani" data-slide-in="at 1000 from fadeIn use linear during 1500">
+            <img class="suit" src="img/slide13-suit.png" />
+          </div>
+        </div>
+        <div class="share-front"></div>
+        <img class="ani share-button" src="img/slide13-share-button.png"
+          data-slide-in="at 1000 from bounceInLeft use linear during 1500" />
+
+        <div class="buy-front"></div>
+        <img class="ani buy" src="img/slide13-buy.png"
+          data-slide-in="at 1000 from bounceInRight use linear during 1500"
+         />
+        <img class="share" src="img/slide13-share.png" />
+
+        <div class="cover"></div>
+      </section>
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+  <script src="js/libs/zepto.min.js"></script>
+  <script src="js/libs/swiper.jquery.min.js"></script>
+  <script src="js/libs/swiper.animate.min.js"></script>
+  <script src="js/libs/swiper.animate-twice.min.js"></script>
+  <script src="js/index.min.9b75111f.js"></script>
+</body>
+</html>
