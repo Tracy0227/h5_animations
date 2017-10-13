@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+  <title>今天我最大，我有旨令下</title>
+  <!-- build:css css/index.min.css -->
+  <link rel="stylesheet" href="css/index.css" />
+  <!-- endbuild -->
+</head>
+<body>
+  <div class="link"><img src="images/link.png" style="width:300px;height:300px;" /></div>
+  <div class="load"><img src="images/loading.gif" /></div>
+  <div class="container">
+    <div class="content">
+      <audio id="audio" src="" loop="loop" autoplay="autoplay"></audio>
+      <img class="resize music-btn active" src="images/music-open.png" style="width:36px;top:4px;right:4px;z-index:10;" />
+      <!--底盘-->
+      <img class="resize center" src="images/plate.png" style="width:250px;top:38px;z-index:1" />
+      <!--花盘-->
+      <div class="resize center flower" style="width:228px;height:228px;top:88px;z-index:2"></div>
+      <!--指针-->
+      <img class="resize center" src="images/pointer.png" style="width:62px;top:144px;z-index:3" />
+      <!--花盘蒙层-->
+      <img class="resize center cover" src="images/cover.png" style="width:214px;top:97px;z-index:4" />
+      <!--令-->
+      <div class="resize center ling" style="width:52px;height:227px;top:88px;z-index:5;"></div>
+      <!--顶部手指-->
+      <div class="resize handTop" style="width:71px;height:66px;top:194px;left:149px;z-index:10;">
+        <img src="images/hand1.png" class="resize hand1" style="width:71px;height:66px;top:0px;left:0px;z-index:10;" />
+        <img src="images/hand2.png" class="resize hand2" style="width:71px;height:66px;top:0px;left:0px;z-index:10;" />
+      </div>
+      <!--底部手指-->
+      <div class="resize handBottm" style="width:71px;height:66px;bottom:20px;left:97px;z-index:11">
+        <img src="images/hand1.png" class="resize hand1" style="width:71px;height:66px;top:0px;left:0px;z-index:11" />
+        <img src="images/hand2.png" class="resize hand2" style="width:71px;height:66px;top:0px;left:0px;z-index:11" />
+      </div>
+      <!--按钮-->
+      <div class="resize center button" style="width:104px;height:71px;bottom:64px;z-index:10">
+        <img src="images/button1.png" class="resize center button1" style="width:104px;height:71px;top:0;left:0px;z-index:10"/>
+        <img src="images/button2.png" class="resize center button2" style="width:104px;height:71px;top:0;left:0px;z-index:10"/>
+      </div>
+      <!--蒙层-->
+      <div id="mask"></div>
+      <!--令展开-->
+      <div class="resize center open1" style="width:271px;height:227px;top:88px;z-index:7"></div>
+      <div class="resize center open2" style="width:271px;height:227px;top:88px;z-index:7"></div>
+      <div class="resize center open3" style="width:271px;height:227px;top:88px;z-index:7"></div>
+      <!--令内容-->
+      <div class="resize center ling-content" style="width:198px;height:116px;top:144px;z-index:8;"></div>
+      <!--在玩一次-->
+      <img class="resize again" src="images/again.png" style="width:118px;z-index:10;top:305px;left:42px;" />
+      <!--分享-->
+      <img class="resize share" src="images/share.png" style="width:118px;z-index:10;top:305px;right:42px;" />
+      <img class="resize arrow" src="images/arrow1.png" style="width:72px;height:52px;top:4px;right:4px;z-index:11;" />
+      <img class="resize arrow arrow2" src="images/arrow2.png" style="width:72px;height:52px;top:4px;right:4px;z-index:11;" />
+      <!--商场-->
+      <a href="http://mallapi.bluemoon.com.cn/webApp/#/home">
+        <img class="resize product" style="bottom:0;left:0;z-index:10;" src="images/product.png" />
+      </a>
+      <!--遮罩层-->
+      <div class="content_cover"></div>
+      <!--二维码-->
+      <img class="resize code" style="bottom:0;left:0;z-index:10;" src="images/code.png" />
+    </div>
+  </div>
+  <script src="js/libs/zepto.min.js"></script>
+  <!-- build:js js/index.min.js -->
+  <script src="js/libs/jweixin-1.0.0.js"></script>
+  <script src="js/libs/resize.js"></script>
+  <script src="js/index.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

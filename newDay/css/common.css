@@ -1,0 +1,285 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "微软雅黑";
+  background-color: #fff;
+}
+
+a, img, button, input, textarea {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -ms-touch-callout: none;
+  -moz-touch-callout: none;
+  -o-touch-callout: none;
+  touch-callout: none;
+}
+
+a:focus, input:focus {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-modify: read-write-plaintext-only;
+}
+
+.link {
+  width: 100%;
+  height: 0;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.swiper-container-vertical > .swiper-pagination-bullets {
+  display: none;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 0.2rem;
+  width: 4%;
+  left: 48%;
+  animation: arrow 1.5s infinite ease-in-out;
+  -webkit-animation: arrow 1.5s infinite ease-in-out;
+}
+
+@keyframes arrow {
+  0%, 30% {
+    opacity: 0;
+    transform: translate(0, 0.2rem);
+  }
+  60% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, -0.2rem);
+  }
+}
+
+@-webkit-keyframes arrow {
+  0%, 30% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0.2rem);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(0, -0.2rem);
+  }
+}
+
+/*音乐分享按钮*/
+.music, #music {
+  width: 7%;
+  top: 0.2rem;
+  right: 16%;
+  z-index: 2;
+}
+
+.share, #share {
+  width: 7%;
+  top: 0.2rem;
+  right: 5%;
+  z-index: 2;
+}
+
+#share {
+  width: 11%;
+  top: 0.1rem;
+  right: 3%
+}
+
+#share, #music {
+  z-index: 4;
+  position: absolute;
+}
+
+/*星空*/
+.star {
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/*页码*/
+.page {
+  font-size: 0.14rem;
+  color: #fff;
+  right: 5%;
+  bottom: 0.2rem;
+}
+
+.swiper-slide img, .swiper-slide div, .music, .share {
+  position: absolute;
+}
+
+.left {
+  top: 0.8rem;
+}
+
+.right {
+  top: 1.1rem;
+}
+
+.content {
+  width: 100%;
+  top: 2rem;
+}
+
+.link {
+  width: 100%;
+  height: 0;
+}
+
+/*蒙层*/
+.mask {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.mask-wrap {
+  background-color: #000;
+  opacity: 0.85;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+
+.share-arrow {
+  position: absolute;
+  right: 8%;
+  top: 0;
+  z-index: 5;
+  width: 15.3%;
+}
+
+/*覆盖块*/
+.swiper_cover {
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background: transparent;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+/*加载页面*/
+#main {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.loading {
+  position: absolute;
+  width: 175px;
+  height: 15px;
+  left: 50%;
+  margin-left: -87px;
+  top: 45%;
+}
+
+.loading span {
+  position: absolute;
+  display: inline-block;
+  width: 15px;
+  height: 100%;
+  background: #0349af;
+  -webkit-transform-origin: right bottom;
+  -webkit-animation: load 1s ease infinite;
+  transform-origin: right bottom;
+  animation: load 1s ease infinite;
+}
+
+.loading span:nth-of-type(1) {
+  left: 0;
+}
+
+.loading span:nth-of-type(2) {
+  left: 35px;
+  opacity: 0;
+}
+
+.loading span:nth-of-type(3) {
+  left: 70px;
+  opacity: 0;
+}
+
+.loading span:nth-of-type(4) {
+  left: 105px;
+  opacity: 0;
+}
+
+.loading span:nth-of-type(5) {
+  left: 140px;
+  opacity: 0;
+}
+
+@keyframes load {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotate(90deg);
+  }
+}
+
+@-webkit-keyframes load {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+  }
+}
+
+.loading span:nth-child(1) {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+}
+
+.loading span:nth-child(2) {
+  animation-delay: 0.13s;
+  -webkit-animation-delay: 0.13s;
+}
+
+.loading span:nth-child(3) {
+  animation-delay: 0.26s;
+  -webkit-animation-delay: 0.26s;
+}
+
+.loading span:nth-child(4) {
+  animation-delay: 0.39s;
+  -webkit-animation-delay: 0.39s;
+}
+
+.loading span:nth-child(5) {
+  animation-delay: 0.52s;
+  -webkit-animation-delay: 0.52s;
+}
